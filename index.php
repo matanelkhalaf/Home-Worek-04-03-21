@@ -11,22 +11,29 @@
 
     print "<h1>".$id[0]."</h1>";
     print "<p style='color:green'>"."<u>".$id[1]."</u>"."</p>";
-    print "<input type='number'>".$id[2]; */
+    print "<input type='number'>".$id[2]; 
 
-    $favcolor = "red";
+    $txt = "";
+    $close = "";
+    $open = "";
+    $number = 5;
 
-switch ($favcolor) {
-  case "red":
-    echo "Your favorite color is red!";
+
+switch ($number) {
+  case 0:
+    $open = "<h1>";
+    $txt = "I learn PHP";
+    $close = "</h1>";
+    echo $open .$txt .$close;
     break;
-  case "blue":
-    echo "Your favorite color is blue!";
+  case 1:
+    echo "This is not number!";
     break;
   case "green":
-    echo "Your favorite color is green!";
+    echo "Whre is the number?";
     break;
   default:
-    echo "Your favorite color is neither red, blue, nor green!";
-}
+    echo "ERROR!";
+} */
     
 ?>
